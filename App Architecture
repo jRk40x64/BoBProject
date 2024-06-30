@@ -1,0 +1,49 @@
+App Architecture:
+
+/kyc-app
+│
+├── /frontend
+│   ├── /public
+│   ├── /src
+│   │   ├── /components
+│   │   ├── /pages
+│   │   ├── /services
+│   │   ├── /styles
+│   │   └── index.js
+│   ├── package.json
+│   └── .env
+│
+├── /backend
+│   ├── /functions
+│   │   ├── documentVerification
+│   │   ├── fraudDetection
+│   │   └── userAuthentication
+│   ├── /utils
+│   ├── /config
+│   ├── requirements.txt
+│   ├── host.json
+│   └── local.settings.json
+│
+├── /ai_models
+│   ├── /scripts
+│   │   ├── train_model.py
+│   │   ├── deploy_model.py
+│   ├── /notebooks
+│   └── config.json
+│
+├── /bot
+│   ├── /dialogs
+│   ├── /services
+│   ├── /utils
+│   └── index.js
+│
+├── /infra
+│   ├── main.bicep
+│   ├── parameters.json
+│   └── scripts
+│       ├── deploy.sh
+│       └── destroy.sh
+│
+├── README.md
+├── .gitignore
+└── LICENSE
